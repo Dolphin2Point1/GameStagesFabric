@@ -55,19 +55,13 @@ public class HashMapItemStageCheckerImpl implements ItemStageChecker {
 
     @Override
     public boolean itemUsableByPlayer(PlayerEntity p, Item i) {
-        ItemModule.LOGGER.info("started item usable by player method");
-        ItemModule.LOGGER.info("Map: " + hashMap);
-        ItemModule.LOGGER.info("Item: " + i);
-        ItemModule.LOGGER.info("GSA Map: " + GameStagesAPI.getStages(p));
         if(hashMap.containsKey(i)) {
             for (String stage: hashMap.get(i)) {
                 if(!GameStagesAPI.hasStage(p, stage)) {
-                    ItemModule.LOGGER.info("item not usable by player");
                     return false;
                 }
             }
         }
-        ItemModule.LOGGER.info("item usable by player");
         return true;
     }
 }

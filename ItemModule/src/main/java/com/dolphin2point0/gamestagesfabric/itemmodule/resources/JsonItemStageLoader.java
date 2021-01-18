@@ -1,14 +1,14 @@
 package com.dolphin2point0.gamestagesfabric.itemmodule.resources;
 
 import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
+import com.dolphin2point0.gamestagesfabric.itemmodule.HashMapItemStageCheckerImpl;
 import com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule;
-import com.dolphin2point0.gamestagesfabric.itemmodule.api.MultiJsonDataLoader;
+import com.dolphin2point0.gamestagesfabric.api.MultiJsonDataLoader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.minecraft.item.Item;
-import net.minecraft.resource.JsonDataLoader;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
@@ -29,6 +29,7 @@ public class JsonItemStageLoader extends MultiJsonDataLoader implements Identifi
 
     @Override
     protected void apply(Map<Identifier, List<JsonElement>> loader, ResourceManager manager, Profiler profiler) {
+        ItemModule.itemStageChecker = new HashMapItemStageCheckerImpl();
         for (Map.Entry<Identifier, List<JsonElement>> entry : loader.entrySet()) {
             for(JsonElement element : entry.getValue()) {
                 Pair<Item, String[]> deserializedItemStages = ItemStagesSerializer.read(JsonHelper.asObject(element, "top element"));

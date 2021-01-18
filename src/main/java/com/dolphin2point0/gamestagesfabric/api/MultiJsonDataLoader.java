@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule.api;
+package com.dolphin2point0.gamestagesfabric.api;
 
-import com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule;
+import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -66,7 +66,7 @@ public abstract class MultiJsonDataLoader extends SinglePreparationResourceReloa
                                                 map.put(identifier2, elementList);
                                             }
                                         } else {
-                                            ItemModule.LOGGER.error("Couldn't load data file {} from {} as it's null or empty", identifier2, identifier);
+                                            GameStagesFabric.LOGGER.error("Couldn't load data file {} from {} as it's null or empty", identifier2, identifier);
                                         }
                                     } catch (Throwable var62) {
                                         var14 = var62;
@@ -120,12 +120,12 @@ public abstract class MultiJsonDataLoader extends SinglePreparationResourceReloa
 
                             }
                         } catch (IllegalArgumentException | IOException | JsonParseException var68) {
-                            ItemModule.LOGGER.error("Couldn't parse data file {} from {}", identifier2, identifier, var68);
+                            GameStagesFabric.LOGGER.error("Couldn't parse data file {} from {}", identifier2, identifier, var68);
                         }
                     }
                 });
             } catch (IOException e) {
-                ItemModule.LOGGER.error("Couldn't parse data file {} from {}", identifier2, identifier, e);
+                GameStagesFabric.LOGGER.error("Couldn't parse data file {} from {}", identifier2, identifier, e);
             }
         }
 

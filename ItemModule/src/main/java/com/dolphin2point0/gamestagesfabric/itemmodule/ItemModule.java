@@ -14,6 +14,7 @@ public class ItemModule implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        LOGGER.info("Initialize item hashmap and resource listeners.");
         itemStageChecker = new HashMapItemStageCheckerImpl();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new JsonItemStageLoader());
     }
