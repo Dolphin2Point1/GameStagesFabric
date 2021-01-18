@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "game-stages-fabric",
+  "version": "${version}",
+  "name": "Game Stages Fabric",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/game-stages-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.dolphin2point0.gamestagesfabric.client.GameStagesFabricClient"
+    ],
+    "main": [
+      "com.dolphin2point0.gamestagesfabric.GameStagesFabric"
+    ],
+    "cardinal-components-entity":  [
+      "com.dolphin2point0.gamestagesfabric.component.GameStagesFabricComponents"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "cardinal-components-base": "2.7.10",
+    "cardinal-components-entity": "2.7.10"
+  },
+  "custom": {
+    "cardinal-components": [
+      "game-stages-fabric:gamestages"
+    ]
+  }
+}

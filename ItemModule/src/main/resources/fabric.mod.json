@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "item_stages",
+  "version": "${version}",
+
+  "name": "GSF: Item Stages",
+  "description": "basically you need stages to have items.",
+  "authors": [
+    "Dolphin2Point0"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule"
+    ]
+  },
+  "mixins": [
+    "item-module.mixins.json"
+  ],
+
+  "depends": {
+    "fabric": "*",
+    "game-stages-fabric": "*"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.dolphin2point0.gamestagesfabric.itemmodule.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ItemEntityMixin",
+    "SlotMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
