@@ -4,6 +4,7 @@
   "package": "com.dolphin2point0.game_stages_fabric.item_module.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "HandledScreenMixin",
     "ItemEntityMixin",
     "SlotMixin"
   ],
