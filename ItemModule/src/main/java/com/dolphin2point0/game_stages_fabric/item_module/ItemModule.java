@@ -1,7 +1,7 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule;
+package com.dolphin2point0.game_stages_fabric.item_module;
 
-import com.dolphin2point0.gamestagesfabric.itemmodule.api.ItemStageChecker;
-import com.dolphin2point0.gamestagesfabric.itemmodule.resources.JsonItemStageLoader;
+import com.dolphin2point0.game_stages_fabric.item_module.api.ItemStageChecker;
+import com.dolphin2point0.game_stages_fabric.item_module.resources.JsonItemStageLoader;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.resource.ResourceType;

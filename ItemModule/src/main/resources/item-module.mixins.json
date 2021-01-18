@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.dolphin2point0.gamestagesfabric.itemmodule.mixin",
+  "package": "com.dolphin2point0.game_stages_fabric.item_module.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ItemEntityMixin",

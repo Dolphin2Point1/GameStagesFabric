@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.api;
+package com.dolphin2point0.game_stages_fabric.api;
 
-import com.dolphin2point0.gamestagesfabric.api.component.GameStagesComponent;
+import com.dolphin2point0.game_stages_fabric.api.component.GameStagesComponent;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.HashSet;

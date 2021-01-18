@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.api;
+package com.dolphin2point0.game_stages_fabric.api;
 
-import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
+import com.dolphin2point0.game_stages_fabric.GameStagesFabric;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;

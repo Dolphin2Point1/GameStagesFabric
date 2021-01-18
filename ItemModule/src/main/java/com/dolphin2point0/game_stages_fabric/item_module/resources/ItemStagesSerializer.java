@@ -1,4 +1,4 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule.resources;
+package com.dolphin2point0.game_stages_fabric.item_module.resources;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

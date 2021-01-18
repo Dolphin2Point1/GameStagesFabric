@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.event;
+package com.dolphin2point0.game_stages_fabric.event;
 
-import com.dolphin2point0.gamestagesfabric.api.component.GameStagesComponent;
+import com.dolphin2point0.game_stages_fabric.api.component.GameStagesComponent;
 import nerdhub.cardinal.components.api.event.PlayerSyncCallback;
 import net.minecraft.server.network.ServerPlayerEntity;
 

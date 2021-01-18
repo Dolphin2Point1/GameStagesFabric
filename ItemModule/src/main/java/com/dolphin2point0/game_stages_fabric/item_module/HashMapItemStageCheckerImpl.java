@@ -1,7 +1,7 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule;
+package com.dolphin2point0.game_stages_fabric.item_module;
 
-import com.dolphin2point0.gamestagesfabric.api.GameStagesAPI;
-import com.dolphin2point0.gamestagesfabric.itemmodule.api.ItemStageChecker;
+import com.dolphin2point0.game_stages_fabric.item_module.api.ItemStageChecker;
+import com.dolphin2point0.game_stages_fabric.api.GameStagesAPI;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 

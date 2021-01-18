@@ -1,4 +1,4 @@
-package com.dolphin2point0.gamestagesfabric.api.component;
+package com.dolphin2point0.game_stages_fabric.api.component;
 
 import dev.onyxstudios.cca.api.v3.component.Component;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;

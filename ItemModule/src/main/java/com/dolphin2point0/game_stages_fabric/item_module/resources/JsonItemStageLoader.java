@@ -1,9 +1,9 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule.resources;
+package com.dolphin2point0.game_stages_fabric.item_module.resources;
 
-import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
-import com.dolphin2point0.gamestagesfabric.itemmodule.HashMapItemStageCheckerImpl;
-import com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule;
-import com.dolphin2point0.gamestagesfabric.api.MultiJsonDataLoader;
+import com.dolphin2point0.game_stages_fabric.item_module.ItemModule;
+import com.dolphin2point0.game_stages_fabric.GameStagesFabric;
+import com.dolphin2point0.game_stages_fabric.item_module.HashMapItemStageCheckerImpl;
+import com.dolphin2point0.game_stages_fabric.api.MultiJsonDataLoader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;

@@ -1,7 +1,7 @@
-package com.dolphin2point0.gamestagesfabric.component;
+package com.dolphin2point0.game_stages_fabric.component;
 
-import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
-import com.dolphin2point0.gamestagesfabric.api.component.GameStagesComponent;
+import com.dolphin2point0.game_stages_fabric.GameStagesFabric;
+import com.dolphin2point0.game_stages_fabric.api.component.GameStagesComponent;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import nerdhub.cardinal.components.api.util.RespawnCopyStrategy;

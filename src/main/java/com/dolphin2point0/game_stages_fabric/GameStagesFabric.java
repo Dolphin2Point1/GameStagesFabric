@@ -1,7 +1,7 @@
-package com.dolphin2point0.gamestagesfabric;
+package com.dolphin2point0.game_stages_fabric;
 
-import com.dolphin2point0.gamestagesfabric.command.GameStagesBasicCommands;
-import com.dolphin2point0.gamestagesfabric.event.SyncComponentOnJoin;
+import com.dolphin2point0.game_stages_fabric.command.GameStagesBasicCommands;
+import com.dolphin2point0.game_stages_fabric.event.SyncComponentOnJoin;
 import nerdhub.cardinal.components.api.event.PlayerSyncCallback;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;

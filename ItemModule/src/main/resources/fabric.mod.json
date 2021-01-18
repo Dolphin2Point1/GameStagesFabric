@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule"
+      "com.dolphin2point0.game_stages_fabric.item_module.ItemModule"
     ]
   },
   "mixins": [

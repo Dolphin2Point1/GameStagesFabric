@@ -1,11 +1,9 @@
-package com.dolphin2point0.gamestagesfabric.component;
+package com.dolphin2point0.game_stages_fabric.component;
 
-import com.dolphin2point0.gamestagesfabric.GameStagesFabric;
-import com.dolphin2point0.gamestagesfabric.api.component.GameStagesComponent;
+import com.dolphin2point0.game_stages_fabric.api.component.GameStagesComponent;
 import com.google.gson.Gson;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 import java.util.HashSet;

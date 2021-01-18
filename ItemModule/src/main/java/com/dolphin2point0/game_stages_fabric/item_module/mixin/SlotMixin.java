@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.itemmodule.mixin;
+package com.dolphin2point0.game_stages_fabric.item_module.mixin;
 
-import com.dolphin2point0.gamestagesfabric.itemmodule.ItemModule;
+import com.dolphin2point0.game_stages_fabric.item_module.ItemModule;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;

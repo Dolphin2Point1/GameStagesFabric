@@ -1,6 +1,6 @@
-package com.dolphin2point0.gamestagesfabric.command;
+package com.dolphin2point0.game_stages_fabric.command;
 
-import com.dolphin2point0.gamestagesfabric.api.GameStagesAPI;
+import com.dolphin2point0.game_stages_fabric.api.GameStagesAPI;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
