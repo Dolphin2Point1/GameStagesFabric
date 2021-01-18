@@ -5,7 +5,7 @@ The API is different but the idea is the same.
 ### Checklist
 
 - [x] API
-- [ ] Item Module
+- [x] Item Module
 - [ ] Block Module (so you can't use certain blocks)
 - [ ] Mob Module (so you can't spawn certain mobs)
 
