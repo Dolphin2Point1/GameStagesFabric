@@ -10,9 +10,6 @@
   "icon": "assets/game-stages-fabric/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "com.dolphin2point0.gamestagesfabric.client.GameStagesFabricClient"
-    ],
     "main": [
       "com.dolphin2point0.gamestagesfabric.GameStagesFabric"
     ],
