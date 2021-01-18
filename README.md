@@ -2,7 +2,7 @@
 Basically just [gamestages](https://github.com/Darkhax-Minecraft/Game-Stages) but for fabric. 
 The API is different but the idea is the same.
 
-###Checklist
+### Checklist
 
 - [x] API
 - [ ] Item Module
