@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(HandledScreen.class)
 public abstract class HandledScreenMixin extends Screen {
-    private static final Identifier RED_TINT = new Identifier("item_stage", "textures/gui/red_tint.png");
+    private static final Identifier RED_TINT = new Identifier("item_stages", "textures/gui/red_tint.png");
 
     protected HandledScreenMixin(Text title) {
         super(title);
