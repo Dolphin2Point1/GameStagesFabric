@@ -1,5 +1,5 @@
 # GameStagesFabric
-Basically just [gamestages](https://github.com/Darkhax-Minecraft/Game-Stages) but for fabric. 
+Basically just [Game-Stages](https://github.com/Darkhax-Minecraft/Game-Stages) but for fabric. 
 The API is different but the idea is the same.
 
 ### Checklist
