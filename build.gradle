@@ -101,6 +101,7 @@ dependencies {
     modImplementation "io.github.prospector:modmenu:${project.modmenu_version}"
 
     modImplementation 'me.lucko:fabric-permissions-api:0.1-SNAPSHOT'
+    include 'me.lucko:fabric-permissions-api:0.1-SNAPSHOT'
 }
 
 // ensure that the encoding is set to UTF-8, no matter what the system default is

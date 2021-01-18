@@ -4,7 +4,9 @@
   "version": "${version}",
   "name": "Game Stages Fabric",
   "description": "",
-  "authors": [],
+  "authors": [
+    "Dolphin2Point0"
+  ],
   "contact": {},
   "license": "MIT",
   "icon": "assets/game-stages-fabric/icon.png",
