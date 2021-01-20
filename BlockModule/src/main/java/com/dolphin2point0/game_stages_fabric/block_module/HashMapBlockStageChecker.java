@@ -4,7 +4,6 @@ import com.dolphin2point0.game_stages_fabric.api.GameStagesAPI;
 import com.dolphin2point0.game_stages_fabric.block_module.api.BlockStageChecker;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 
 import java.util.Arrays;
 import java.util.HashMap;
