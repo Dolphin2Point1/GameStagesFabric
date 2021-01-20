@@ -3,7 +3,7 @@ package com.dolphin2point0.game_stages_fabric.item_module.resources;
 import com.dolphin2point0.game_stages_fabric.item_module.ItemModule;
 import com.dolphin2point0.game_stages_fabric.GameStagesFabric;
 import com.dolphin2point0.game_stages_fabric.item_module.HashMapItemStageCheckerImpl;
-import com.dolphin2point0.game_stages_fabric.api.MultiJsonDataLoader;
+import com.dolphin2point0.game_stages_fabric.api.resources.MultiJsonDataLoader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class JsonItemStageLoader extends MultiJsonDataLoader implements IdentifiableResourceReloadListener {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
-    private static final Identifier id = new Identifier("item_stages", "item_stage");
+    private static final Identifier id = new Identifier("game_stages_fabric", "item_stage");
 
     public JsonItemStageLoader() {
         super(GSON, "item_stage");
