@@ -1,4 +1,4 @@
-package com.dolphin2point0.game_stages_fabric.api;
+package com.dolphin2point0.game_stages_fabric.api.resources;
 
 import com.dolphin2point0.game_stages_fabric.GameStagesFabric;
 import com.google.common.collect.Maps;
