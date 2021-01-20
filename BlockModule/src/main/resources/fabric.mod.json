@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "block_stages",
+  "version": "${version}",
+
+  "name": "GSF: Block Stages",
+  "description": "you can only use/break/place blocks with the required stages",
+  "authors": [
+    "Dolphin2Point0"
+  ],
+  "contact": {
+    "sources": "https://github.com/Dolphin2Point1/GameStagesFabric"
+  },
+
+  "license": "MIT",
+  "icon": "assets/block_stages/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dolphin2point0.game_stages_fabric.block_module.BlockModule"
+    ]
+  },
+  "mixins": [
+    "block-module.mixins.json"
+  ],
+
+  "depends": {
+    "fabric": "*",
+    "game-stages-fabric": "*"
+  }
+}
