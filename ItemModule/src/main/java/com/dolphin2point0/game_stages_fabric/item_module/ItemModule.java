@@ -17,5 +17,6 @@ public class ItemModule implements ModInitializer {
         LOGGER.info("Initialize item hashmap and resource listeners.");
         itemStageChecker = new HashMapItemStageCheckerImpl();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new JsonItemStageLoader());
+        LOGGER.warn("The datapack folder has been moved to game_stages_fabric/item_stage from item_stages/item_stage! Make sure you have moved all your stage files!");
     }
 }

@@ -34,11 +34,11 @@ public class JsonItemStageLoader extends MultiJsonDataLoader implements Identifi
             for(JsonElement element : entry.getValue()) {
                 Pair<Item, String[]> deserializedItemStages = ItemStagesSerializer.read(JsonHelper.asObject(element, "top element"));
                 ItemModule.itemStageChecker.addStagesToItem(deserializedItemStages.getLeft(), deserializedItemStages.getRight());
-                GameStagesFabric.LOGGER.info("Added stages " + Arrays.toString(deserializedItemStages.getRight())
+                ItemModule.LOGGER.info("Added stages " + Arrays.toString(deserializedItemStages.getRight())
                         + " to item " + deserializedItemStages.getLeft().getTranslationKey());
             }
         }
-        GameStagesFabric.LOGGER.info("Added stages to items.");
+        ItemModule.LOGGER.info("Added stages to items.");
     }
 
     @Override
