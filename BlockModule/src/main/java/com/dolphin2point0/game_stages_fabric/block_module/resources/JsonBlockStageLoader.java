@@ -23,9 +23,8 @@ public class JsonBlockStageLoader extends MultiJsonDataLoader implements Identif
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
     private static final Identifier id = new Identifier("game_stages_fabric", "block_stages");
 
-
     public JsonBlockStageLoader() {
-        super(GSON, "item_stage");
+        super(GSON, "block_stages");
     }
 
     @Override

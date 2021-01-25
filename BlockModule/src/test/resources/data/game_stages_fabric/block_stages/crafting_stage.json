@@ -1,0 +1,6 @@
+{
+  "block": "minecraft:crafting_table",
+  "stages": [
+    "crafting_stage"
+  ]
+}
