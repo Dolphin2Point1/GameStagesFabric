@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "GSF: Block Stages",
-  "description": "you can only use/break/place blocks with the required stages",
+  "description": "you can only use blocks with the required stages",
   "authors": [
     "Dolphin2Point0"
   ],

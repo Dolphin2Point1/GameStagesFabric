@@ -9,7 +9,6 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
@@ -35,12 +34,12 @@ public class JsonBlockStageLoader extends MultiJsonDataLoader implements Identif
         for (Map.Entry<Identifier, List<JsonElement>> entry : loader.entrySet()) {
             for(JsonElement element : entry.getValue()) {
                 Pair<Block, String[]> deserializedItemStages = BlockStagesSerializer.read(JsonHelper.asObject(element, "top element"));
-                BlockModule.BLOCK_STAGE_CHECKER.addStagesToItem(deserializedItemStages.getLeft(), deserializedItemStages.getRight());
+                BlockModule.BLOCK_STAGE_CHECKER.addStagesToBlock(deserializedItemStages.getLeft(), deserializedItemStages.getRight());
                 GameStagesFabric.LOGGER.info("Added stages " + Arrays.toString(deserializedItemStages.getRight())
                         + " to block " + deserializedItemStages.getLeft().getTranslationKey());
             }
         }
-        GameStagesFabric.LOGGER.info("Added stages to block.");
+        GameStagesFabric.LOGGER.info("Added stages to blocks.");
     }
 
     @Override

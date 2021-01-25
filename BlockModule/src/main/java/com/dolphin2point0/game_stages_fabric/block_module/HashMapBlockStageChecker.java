@@ -13,7 +13,7 @@ public class HashMapBlockStageChecker implements BlockStageChecker {
     HashMap<Block, String[]> hashMap = new HashMap<>();
 
     @Override
-    public void addStageToItem(Block block, String stage) {
+    public void addStageToBlock(Block block, String stage) {
         if(stage == null || block == null) {
             return;
         }
@@ -31,14 +31,14 @@ public class HashMapBlockStageChecker implements BlockStageChecker {
     }
 
     @Override
-    public void addStagesToItem(Block block, String[] stages) {
+    public void addStagesToBlock(Block block, String[] stages) {
         for (String stage: stages) {
-            addStageToItem(block, stage);
+            addStageToBlock(block, stage);
         }
     }
 
     @Override
-    public void removeStageFromItem(Block block, String stage) {
+    public void removeStageFromBlock(Block block, String stage) {
         if(stage == null || block == null) {
             return;
         }
@@ -54,7 +54,7 @@ public class HashMapBlockStageChecker implements BlockStageChecker {
     }
 
     @Override
-    public boolean itemUsableByPlayer(Block block, PlayerEntity player) {
+    public boolean blockUsableByPlayer(Block block, PlayerEntity player) {
         if(hashMap.containsKey(block)) {
             for (String stage: hashMap.get(block)) {
                 if(!GameStagesAPI.hasStage(player, stage)) {
