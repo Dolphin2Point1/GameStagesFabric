@@ -21,10 +21,10 @@ import java.util.Map;
 
 public class JsonItemStageLoader extends MultiJsonDataLoader implements IdentifiableResourceReloadListener {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
-    private static final Identifier id = new Identifier("game_stages_fabric", "item_stage");
+    private static final Identifier id = new Identifier("game_stages_fabric", "item_stages");
 
     public JsonItemStageLoader() {
-        super(GSON, "item_stage");
+        super(GSON, "item_stages");
     }
 
     @Override
