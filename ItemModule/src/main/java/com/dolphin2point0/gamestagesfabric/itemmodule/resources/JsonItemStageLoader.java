@@ -20,10 +20,10 @@ import java.util.Map;
 
 public class JsonItemStageLoader extends MultiJsonDataLoader implements IdentifiableResourceReloadListener {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
-    private static final Identifier id = new Identifier("game_stages_fabric", "item_stages");
+    private static final Identifier id = new Identifier("gamestagesfabric", "itemstages");
 
     public JsonItemStageLoader() {
-        super(GSON, "item_stages");
+        super(GSON, "itemstages");
     }
 
     @Override
@@ -31,10 +31,12 @@ public class JsonItemStageLoader extends MultiJsonDataLoader implements Identifi
         ItemModule.itemStageChecker = new HashMapItemStageCheckerImpl();
         for (Map.Entry<Identifier, List<JsonElement>> entry : loader.entrySet()) {
             for(JsonElement element : entry.getValue()) {
-                Pair<Item, String[]> deserializedItemStages = ItemStagesSerializer.read(JsonHelper.asObject(element, "top element"));
-                ItemModule.itemStageChecker.addStagesToItem(deserializedItemStages.getLeft(), deserializedItemStages.getRight());
-                ItemModule.LOGGER.info("Added stages " + Arrays.toString(deserializedItemStages.getRight())
-                        + " to item " + deserializedItemStages.getLeft().getTranslationKey());
+                Pair<Item[], String[]> deserializedItemStages = ItemStagesSerializer.read(JsonHelper.asObject(element, "top element"));
+                for (Item item : deserializedItemStages.getLeft()) {
+                    ItemModule.itemStageChecker.addStagesToItem(item, deserializedItemStages.getRight());
+                    ItemModule.LOGGER.info("Added stages " + Arrays.toString(deserializedItemStages.getRight())
+                            + " to item " + item.getTranslationKey());
+                }
             }
         }
         ItemModule.LOGGER.info("Added stages to items.");

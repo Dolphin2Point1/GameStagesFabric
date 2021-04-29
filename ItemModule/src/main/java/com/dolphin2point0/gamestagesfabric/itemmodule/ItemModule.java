@@ -17,6 +17,9 @@ public class ItemModule implements ModInitializer {
         LOGGER.info("Initialize item hashmap and resource listeners.");
         itemStageChecker = new HashMapItemStageCheckerImpl();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new JsonItemStageLoader());
-        LOGGER.warn("The datapack folder has been moved to game_stages_fabric/item_stages from item_stages/item_stage! Make sure you have moved all your stage files!");
+        LOGGER.warn("The datapack folder has been moved to gamestagesfabric/itemstages from item_stages/item_stage! Make" +
+                " sure you have moved all your stage files, and updated them to the new format! The new format allows " +
+                "arrays of items to be specified. Surround a list of the identifiers of the items you want to stage with" +
+                " []");
     }
 }

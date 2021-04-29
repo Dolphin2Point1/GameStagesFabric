@@ -1,5 +1,5 @@
 {
-  "item": "minecraft:crafting_table",
+  "items": ["minecraft:crafting_table"],
   "stages": [
     "crafting_stage"
   ]
