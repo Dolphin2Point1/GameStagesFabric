@@ -20,6 +20,8 @@ public class ItemModule implements ModInitializer {
         LOGGER.warn("The datapack folder has been moved to gamestagesfabric/itemstages from item_stages/item_stage! Make" +
                 " sure you have moved all your stage files, and updated them to the new format! The new format allows " +
                 "arrays of items to be specified. Surround a list of the identifiers of the items you want to stage with" +
-                " []");
+                " [], and move the array to items. For refrence: " +
+                "https://github.com/Dolphin2Point1/GameStagesFabric/blob/40361d9fa35debae0646c5f2700e0847d075a404/ItemMo" +
+                "dule/src/main/resources/data/gamestagesfabric/itemstages/crafting_stage.json");
     }
 }

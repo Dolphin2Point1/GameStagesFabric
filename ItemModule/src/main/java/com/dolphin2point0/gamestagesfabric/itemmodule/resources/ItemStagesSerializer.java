@@ -17,11 +17,11 @@ public class ItemStagesSerializer {
             Item item = JsonHelper.asItem(jsonElement, jsonElement.getAsString());
             items.add(item);
         }
-        JsonArray stages = JsonHelper.getArray(jsonObject, "stages");
-        ArrayList<String> stageList = new ArrayList<>();
-        for (JsonElement element : stages) {
-            stageList.add(element.getAsString());
+
+        ArrayList<String> stages = new ArrayList<>();
+        for (JsonElement element : JsonHelper.getArray(jsonObject, "stages")) {
+            stages.add(element.getAsString());
         }
-        return new Pair<>(items.toArray(new Item[0]), stageList.toArray(new String[0]));
+        return new Pair<>(items.toArray(new Item[0]), stages.toArray(new String[0]));
     }
 }
