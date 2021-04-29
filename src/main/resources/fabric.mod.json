@@ -9,14 +9,14 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/game-stages-fabric/icon.png",
+  "icon": "assets/gamestagesfabric/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.dolphin2point0.game_stages_fabric.GameStagesFabric"
+      "com.dolphin2point0.gamestagesfabric.GameStagesFabric"
     ],
     "cardinal-components-entity":  [
-      "com.dolphin2point0.game_stages_fabric.component.GameStagesFabricComponents"
+      "com.dolphin2point0.gamestagesfabric.component.GameStagesFabricComponents"
     ]
   },
   "depends": {
