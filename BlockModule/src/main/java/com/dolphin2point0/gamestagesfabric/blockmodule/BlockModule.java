@@ -9,7 +9,6 @@ import net.minecraft.resource.ResourceType;
 public class BlockModule implements ModInitializer {
     public static BlockStageChecker BLOCK_STAGE_CHECKER;
 
-
     @Override
     public void onInitialize() {
         BLOCK_STAGE_CHECKER = new HashMapBlockStageChecker();
