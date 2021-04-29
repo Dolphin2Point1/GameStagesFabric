@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 
 import java.util.Arrays;
@@ -45,9 +46,9 @@ public class GameStagesBasicCommands implements CommandRegistrationCallback {
         String stageName = getString(context, "stage_name");
         PlayerEntity p = getPlayer(context, "player");
         if(GameStagesAPI.addStage(p, stageName)) {
-            context.getSource().sendFeedback(Text.of("Added stage \"" + stageName + "\" to " + p.getDisplayName().asString()), true);
+            context.getSource().sendFeedback(new LiteralText("Added stage \"" + stageName + "\" to " + p.getDisplayName().asString()), true);
         } else {
-            context.getSource().sendFeedback(Text.of(p.getDisplayName().asString() + " already has stage \"" + stageName + "\""), true);
+            context.getSource().sendFeedback(new LiteralText(p.getDisplayName().asString() + " already has stage \"" + stageName + "\""), true);
         }
         return 0;
     }
@@ -56,9 +57,9 @@ public class GameStagesBasicCommands implements CommandRegistrationCallback {
         String stageName = getString(context, "stage_name");
         PlayerEntity p = getPlayer(context, "player");
         if(GameStagesAPI.removeStage(p, stageName)) {
-            context.getSource().sendFeedback(Text.of("Removed stage \"" + stageName + "\" from " + p.getDisplayName().asString()), true);
+            context.getSource().sendFeedback(new LiteralText("Removed stage \"" + stageName + "\" from " + p.getDisplayName().asString()), true);
         } else {
-            context.getSource().sendFeedback(Text.of(p.getDisplayName().asString() + " doesn't have stage \"" + stageName + "\""), true);
+            context.getSource().sendFeedback(new LiteralText(p.getDisplayName().asString() + " doesn't have stage \"" + stageName + "\""), true);
         }
         return 0;
     }
@@ -69,10 +70,10 @@ public class GameStagesBasicCommands implements CommandRegistrationCallback {
         boolean hasStage = GameStagesAPI.hasStage(p, stageName);
         Text stageText;
         if(hasStage) {
-            stageText = Text.of(p.getDisplayName().asString() + " has stage \"" + stageName + "\"");
+            stageText = new LiteralText(p.getDisplayName().asString() + " has stage \"" + stageName + "\"");
         }
         else {
-            stageText = Text.of(p.getDisplayName().asString() + " doesn't have stage \"" + stageName + "\"");
+            stageText = new LiteralText(p.getDisplayName().asString() + " doesn't have stage \"" + stageName + "\"");
         }
         context.getSource().sendFeedback(stageText, true);
         return 0;
@@ -82,9 +83,9 @@ public class GameStagesBasicCommands implements CommandRegistrationCallback {
         PlayerEntity p = getPlayer(context, "player");
         HashSet<String> stages = GameStagesAPI.getStages(p);
         if(stages.isEmpty()) {
-            context.getSource().sendFeedback(Text.of(p.getDisplayName().asString() + " doesn't have any stages."), true);
+            context.getSource().sendFeedback(new LiteralText(p.getDisplayName().asString() + " doesn't have any stages."), true);
         } else {
-            context.getSource().sendFeedback(Text.of(p.getDisplayName().asString() + " has stages: " +
+            context.getSource().sendFeedback(new LiteralText(p.getDisplayName().asString() + " has stages: " +
                     Arrays.toString(stages.toArray())), true);
         }
         return 0;
